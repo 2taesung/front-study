@@ -1,0 +1,25 @@
+---
+description: https://nextjs.org/docs/app/building-your-application/optimizing/images
+---
+
+# next/image
+
+\<Image> 의 장점
+
+* Type이 jpeg가 아니라 webp로 가져옴(용량 최적화)
+* Size가 75kB, Time이 28ms 걸리는 파일이 => 5.4kB, 5ms 로 최적화됨.
+* 자동으로 w, h 잡아줘서 Cumulative Layout Shift 를 자동으로 방지
+* lazy loading, blurDataURL, placeholder 등을 옵션으로 쉽게 잡아줄 수 있음
+* priority 속성을 통해 LCP를 우선 처리를 할 수 있음.
+
+
+
+주의점
+
+* styled-jsx를 쓸 수 없음.
+* 외부 주소의 이미지일 경우는 미리 w,h를 알 수 없어 필수로 넣어줘야함(fill로 부모 사이즈에 맞출 수 있음)
+* 외부 주소 에러가 뜬다면 next.config에서 domain 세팅을 해줘야함. 그냥 단순하게 domain 추가해놓을 수 도 있긴 한데 그것보다 next에서 제안하는 remotePatterns를 하기를 추천.
+
+
+
+\=> 이게 가능한 이유는 next에서 파일을 static하게 가져와서 이미 들고 있기 때문.
