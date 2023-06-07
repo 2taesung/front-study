@@ -8,3 +8,4 @@
   * [철학](next/undefined.md)
   * [next/image](next/next-image.md)
   * [next/link](next/next-link.md)
+  * [next/script](next/next-script.md)
