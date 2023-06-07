@@ -24,7 +24,7 @@ Next.js를 사용하는 자체가 CRA를 통해 했던 것들을 이미 한번 �
 
 관련 단테님의 의견
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

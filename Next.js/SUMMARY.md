@@ -4,6 +4,7 @@
 * [개발환경](<README (1).md>)
   * [React.js와 비교해 주의해야할 점](undefined/react.js.md)
   * [eslint](undefined/eslint.md)
+  * [global scss](undefined/global-scss.md)
 * [Next](next/README.md)
   * [철학](next/undefined.md)
   * [next/image](next/next-image.md)
