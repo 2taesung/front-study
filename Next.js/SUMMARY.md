@@ -17,5 +17,6 @@
       * [useRouter](next/routing/linking-and-navigating/userouter.md)
       * [Shallow Routing](next/routing/linking-and-navigating/shallow-routing.md)
   * [Rendering](next/rendering.md)
-  * [next/image](next/next-image.md)
-  * [next/script](next/next-script.md)
+  * [Optimizations(최적화)](next/optimizations/README.md)
+    * [next/image](next/optimizations/next-image.md)
+    * [next/script](next/optimizations/next-script.md)
