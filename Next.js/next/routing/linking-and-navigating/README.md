@@ -6,3 +6,4 @@ Next.js의 네비게이션은 똑똑하게 동작하여 페이지 전체를 다�
 
 * Link Component
 * useRouter hook
+* Shallow Routing

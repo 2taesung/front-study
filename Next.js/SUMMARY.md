@@ -14,6 +14,7 @@
     * [Linking and Navigating](next/routing/linking-and-navigating/README.md)
       * [next/link](next/next-link.md)
       * [useRouter](next/routing/linking-and-navigating/userouter.md)
+      * [Shallow Routing](next/routing/linking-and-navigating/shallow-routing.md)
   * [Rendering](next/rendering.md)
   * [next/image](next/next-image.md)
   * [next/script](next/next-script.md)
