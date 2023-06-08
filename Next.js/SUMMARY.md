@@ -4,6 +4,8 @@
 * [개발환경](<README (1).md>)
   * [React.js와 비교해 주의해야할 점](undefined/react.js.md)
   * [next.config.js](undefined/next.config.js.md)
+  * [next-env.d.ts](undefined/next-env.d.ts.md)
+  * [.babelrc](undefined/.babelrc.md)
   * [eslint](undefined/eslint.md)
   * [global scss](undefined/global-scss.md)
 * [Next](next/README.md)
