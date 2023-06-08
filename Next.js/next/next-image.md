@@ -22,6 +22,12 @@ description: https://nextjs.org/docs/app/building-your-application/optimizing/im
 * 외부 주소의 이미지일 경우는 미리 w,h를 알 수 없어 필수로 넣어줘야함(fill로 부모 사이즈에 맞출 수 있음)
 * 외부 주소 에러가 뜬다면 next.config에서 domain 세팅을 해줘야함. 그냥 단순하게 domain 추가해놓을 수 도 있긴 한데 그것보다 next에서 제안하는 remotePatterns를 하기를 추천.
 
+\=> remotePatterns가 23년1월 출판된 책에 언급 없음 => 새로 생김
+
+\=> 외부 주소가 들어가 있다보니 => 악의적인 침입에 데미지를 받음 그래서 그걸 막아주면서 생김
+
+
+
 
 
 \=> 이게 가능한 이유는 next에서 파일을 static하게 가져와서 이미 들고 있기 때문.
