@@ -10,6 +10,7 @@
   * [global scss](undefined/global-scss.md)
 * [Next](next/README.md)
   * [철학](next/undefined.md)
+  * [Rendering](next/rendering.md)
   * [next/image](next/next-image.md)
   * [next/link](next/next-link.md)
   * [next/script](next/next-script.md)
