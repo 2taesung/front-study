@@ -1,5 +1,11 @@
 # next.config.js
 
+설정보다 관습!
+
+\=> next.js 프로젝트를 하는데 솔직히 이 파일만 잘 관리해도 된다가 중론
+
+
+
 <mark style="background-color:orange;">reactStrictMode: false?</mark>
 
 ```javascript
