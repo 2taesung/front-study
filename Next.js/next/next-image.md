@@ -30,3 +30,17 @@ description: https://nextjs.org/docs/app/building-your-application/optimizing/im
 
 
 
+```javascript
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 's3.amazonaws.com',
+        port: '',
+        pathname: '/my-bucket/**',
+      },
+    ],
+  },
+};
+```
