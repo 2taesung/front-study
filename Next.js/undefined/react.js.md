@@ -59,5 +59,14 @@ Next.js가 babel의 @babel/plugin-transform-typescript를 사용해 설정 파�
 
 
 
+### react hook 사용시
 
+Next.js는 기본적으로 ServerSide 이기 때문에 react hooks를 쓸 수 없음&#x20;
 
+고로&#x20;
+
+```tsx
+"use client"
+```
+
+를 써줘야 함
