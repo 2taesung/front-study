@@ -1,4 +1,19 @@
+---
+description: >-
+  https://nextjs.org/docs/pages/building-your-application/configuring/eslint#prettier
+---
+
 # eslint
+
+
+
+
+
+
+
+
+
+아래 x 체크 필요
 
 ```typescript
 {
