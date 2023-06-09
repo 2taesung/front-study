@@ -22,7 +22,7 @@ description: https://nextjs.org/docs/app/building-your-application/optimizing/im
 * 외부 주소의 이미지일 경우는 미리 w,h를 알 수 없어 필수로 넣어줘야함(fill로 부모 사이즈에 맞출 수 있음)
 * 외부 주소 에러가 뜬다면 next.config에서 domain 세팅을 해줘야함. 그냥 단순하게 domain 추가해놓을 수 도 있긴 한데 그것보다 next에서 제안하는 remotePatterns를 하기를 추천.
 
-\=> next.confg를 이용해 이것저것 하는 것이 언급되어 있긴 한데 remotePatterns 를 하면서 지양하는 듯.
+\=> next.confg를 이용해 [이것저것 하는 것이 언급](#user-content-fn-1)[^1]되어 있긴 한데 remotePatterns 를 하면서 지양하는 듯.
 
 \=> remotePatterns가 23년1월 출판된 책에 언급 없음 => 새로 생김
 
@@ -52,3 +52,5 @@ module.exports = {
   },
 };
 ```
+
+[^1]: loader로 최적화하고 등, 이 loader는 vercel로 배포하면 자동으로 최적화
