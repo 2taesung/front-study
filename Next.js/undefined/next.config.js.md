@@ -6,6 +6,8 @@
 
 
 
+domain option은 Next.js에서 현재는 지양하는 패턴임
+
 <mark style="background-color:orange;">reactStrictMode: false?</mark>
 
 ```javascript
