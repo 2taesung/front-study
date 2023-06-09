@@ -5,11 +5,44 @@ description: >-
 
 # eslint
 
+```json
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "commonjs": true,
+    "es2022": true
+  },
 
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
 
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
 
-
-
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "error",
+    "import/no-unresolved": "error",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ]
+  }
+}
+```
 
 
 
