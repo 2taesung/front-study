@@ -7,14 +7,15 @@ description: >-
 
 ```json
 {
-  "env": {
+  //console 같은 사전 static 메서드를 인식가능
+  "env": {//전역변수 
     "es6": true,
     "node": true,
     "commonjs": true,
     "es2022": true
   },
 
-  "parserOptions": {
+  "parserOptions": { //js 언어 옵션 설정
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
@@ -22,7 +23,8 @@ description: >-
     }
   },
 
-  "parser": "@typescript-eslint/parser",
+  //구문 분석을 위한거(ts구문 분석 parser)
+  "parser": "@typescript-eslint/parser", 
   "extends": [
     "next/core-web-vitals",
     "prettier",
@@ -30,9 +32,12 @@ description: >-
     "plugin:@typescript-eslint/recommended"
   ],
 
+  //off(0) 사용안함
+  //warn(1) 경고
+  //error(2) 오류
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
-    "import/no-unresolved": "error",
+    "import/no-unresolved": "error", //절대경로
     "react/self-closing-comp": [
       "error",
       {
