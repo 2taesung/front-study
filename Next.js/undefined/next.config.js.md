@@ -8,6 +8,22 @@
 
 domain option은 Next.js에서 현재는 지양하는 패턴임
 
+
+
+### [env](https://nextjs.org/docs/app/api-reference/next-config-js/env)
+
+```javascript
+module.exports = {
+  env: {
+    customKey: 'my-value',
+  },
+}
+```
+
+
+
+### [reactStrictMode](https://nextjs.org/docs/app/api-reference/next-config-js/reactStrictMode)
+
 <mark style="background-color:orange;">reactStrictMode: false?</mark>
 
 ```javascript
