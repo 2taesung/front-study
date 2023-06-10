@@ -12,6 +12,10 @@ domain option은 Next.js에서 현재는 지양하는 패턴임
 
 ### [env](https://nextjs.org/docs/app/api-reference/next-config-js/env)
 
+환경변수보다는 전역변수에 해당.&#x20;
+
+bundle 파일에 포함이 무조건 된다고 함.
+
 ```javascript
 module.exports = {
   env: {
