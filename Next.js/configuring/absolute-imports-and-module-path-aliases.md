@@ -21,7 +21,7 @@ tsconfig.json
 {
   "compilerOptions": {
     "baseUrl": ".", //'src'
-    "paths": {
+    "paths": {//custom
       "@src/*": ["./src/*"],
       "@asset/*": ["./public/asset"]
     }
