@@ -7,8 +7,19 @@ tsconfig.json
   "compilerOptions": {
     "baseUrl": ".", //'src'
     "paths": {
-      "@/components/*": ["components/*"]
+      "@src/*": ["./src/*"],
+      "@asset/*": ["./public/asset"]
     }
   }
 }
 ```
+
+
+
+.eslintrc.json
+
+```json
+```
+
+
+
