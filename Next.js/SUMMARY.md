@@ -6,7 +6,7 @@
   * [next.config.js](undefined/next.config.js.md)
   * [next-env.d.ts](undefined/next-env.d.ts.md)
   * [.babelrc](undefined/.babelrc.md)
-  * [eslint](configuring/eslint/README.md)
+  * [eslint](undefined/eslint.md)
     * [import/order](configuring/eslint/import-order.md)
   * [global scss](undefined/global-scss.md)
   * [Absolute Imports and Module Path Aliases](configuring/absolute-imports-and-module-path-aliases.md)
