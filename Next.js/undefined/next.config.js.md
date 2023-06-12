@@ -4,6 +4,16 @@
 
 \=> next.js 프로젝트를 하는데 솔직히 이 파일만 잘 관리해도 된다가 중론
 
+\=> 거기다 공식문서에 명시되어 있는 부분인데&#x20;
+
+> However, <mark style="color:red;">none of the configs are required</mark>, and <mark style="color:red;">it's not necessary to understand</mark> what each config does. Instead, search for the features you <mark style="color:red;">need to enable or modify</mark> in this section and they will show you what to do.
+
+
+
+주의사항 : next.config.js는 Webpack, Babel or TS로 parse 되지 않으니 최신 js 문법을 쓰면 안됨.
+
+
+
 
 
 domain option은 Next.js에서 현재는 지양하는 패턴임
