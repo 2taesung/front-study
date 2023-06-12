@@ -22,3 +22,4 @@
     * [image](next/next-image.md)
     * [script](next/next-script.md)
     * [Analytics](next/optimizations/analytics.md)
+  * [Environment Variables](next/environment-variables.md)
