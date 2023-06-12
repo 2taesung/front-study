@@ -26,6 +26,8 @@ domain option은 Next.js에서 현재는 지양하는 패턴임
 
 bundle 파일에 포함이 무조건 된다고 함.
 
+\=> 이 말 즉, 노출이 되는 변수다.
+
 ```javascript
 module.exports = {
   env: {
