@@ -25,7 +25,7 @@
     * [17. mapped type](part1./1./17.-mapped-type.md)
     * [18. optional](part1./1./18.-optional.md)
     * [19. Generic(타입매개변수)](part1./1./19.-generic.md)
-    * [20. 기본값 넣기(함수, 제네릭 등에)](part1./1./20..md)
+    * [20. 기본값 넣기(default prameter) 함수, 제네릭 등에](part1./1./20.-default-prameter.md)
     * [21. infer](part1./1./21.-infer.md)
   * [섹션 2. lib.es5.d.ts 분석](part1./2.-lib.es5.d.ts/README.md)
     * [lib.es5.d.ts](part1./2.-lib.es5.d.ts/lib.es5.d.ts.md)
