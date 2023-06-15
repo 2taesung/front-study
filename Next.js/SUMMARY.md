@@ -24,4 +24,5 @@
     * [Analytics](next/optimizations/analytics.md)
   * [Environment Variables](next/environment-variables.md)
   * [Styling](next/styling/README.md)
-    * [CSS-in-JS](next/styling/css-in-js.md)
+    * [CSS-in-JS](next/styling/css-in-js/README.md)
+      * [styled-component](next/styling/css-in-js/styled-component.md)
