@@ -1,5 +1,7 @@
 # CSS-in-JS
 
+### styled-jsx(next.js 기본제공)
+
 Component를 이용해서 inline도 가능은 함
 
 그러나 공식적으로 다양한 styled-jsx 기능 들을 Next에서 제공함.
