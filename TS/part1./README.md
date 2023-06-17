@@ -7,3 +7,5 @@ description: '인프런 조현영 개발자님의 [리뉴얼] 타입스크립트
 
 
 교재 : [https://github.com/ZeroCho/ts-all-in-one](https://github.com/ZeroCho/ts-all-in-one)
+
+좋은 자료 : [https://ahnheejong.gitbook.io/ts-for-jsdev/04-interface-and-class/interface-basics](https://ahnheejong.gitbook.io/ts-for-jsdev/04-interface-and-class/interface-basics)
