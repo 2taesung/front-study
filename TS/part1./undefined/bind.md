@@ -83,6 +83,28 @@ T는 (infer A) 매개변수 추론, => infer R 리턴값 추론 을 통해
 
 
 
+👌 굿 이해 했음
+
+이 bind 라는 함수는 function에 속해 있으면서&#x20;
+
+기본적으로 갖는 this 파라미터가 있는 상황에 (Window 같은)
+
+thisArg가 들어오면 기본적으로 있는 this랑 비교해서 thisArg를 우선시 처리해줘야하는 로직을 가지고 있음
+
+\=> 고로 bind를 쓰면 OmitThisParameter\<T>에 따라 return 값의 타입은 this가 없는 함수가 나온다.
+
+
+
+왜 계속 오버로딩이 되었는가?
+
+그건 bind의 다양한 쓰임에 따라 경우에 수를 늘려준것.
+
+
+
+
+
+
+
 
 
 
