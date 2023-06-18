@@ -15,6 +15,30 @@ type Params = Parameters<typeof zip>;
 // type Params = [x: stirng, y: number]
 ```
 
+이제 이 Parameters를 만들업보자
+
+가장 먼저&#x20;
+
+type P\<T> = ...
+
+T는 function을 받기 때문에&#x20;
+
+type P\<T extends (...args: any) => any> = ...
+
+\=> 이건 함수를 받는 그냥 공식이다. => T는 함수여야된다 이거야
+
+type P\<T extends (...args: any) => any> = T extends (...args:infer A) => any ? A: never;
+
+\=> infer 는 extends에서만 사용 가능
+
+\=> ts 한테 매개변수 자리를 추론하라는 것이다.
+
+\=> 우리는 함수를 넣었으니까 함수 안에 있는 매개변수 ,  x, y 를 ts에게 직접 추론하라고 하고 사용하는 것이다.
+
+
+
+
+
 infer 를 이용해서 return 에 args들을 뱉어놓는다.
 
 고로
