@@ -85,7 +85,7 @@ T는 (infer A) 매개변수 추론, => infer R 리턴값 추론 을 통해
 
 👌 굿 이해 했음
 
-이 bind 라는 함수는 function에 속해 있으면서&#x20;
+이 [bind 라는 함수](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global\_Objects/Function/bind)는 function에 속해 있으면서&#x20;
 
 기본적으로 갖는 this 파라미터가 있는 상황에 (Window 같은)
 
@@ -98,6 +98,8 @@ thisArg가 들어오면 기본적으로 있는 this랑 비교해서 thisArg를 �
 왜 계속 오버로딩이 되었는가?
 
 그건 bind의 다양한 쓰임에 따라 경우에 수를 늘려준것.
+
+예를 들면, bind에 인자를 이미 몇개 추가해서 설정했다거나
 
 
 
