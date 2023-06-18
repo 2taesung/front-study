@@ -47,7 +47,7 @@ infer 를 이용해서 return 에 args들을 뱉어놓는다.
 type Params = ['string', 'number'];
 ```
 
-이렇게 하드코딩으로 타입들을 넣는게 아니라
+<mark style="background-color:green;">이렇게 하드코딩으로 타입들을 넣는게 아니라</mark>
 
 keyof object 처럼 유기적으로 가져올 수 있다.
 
