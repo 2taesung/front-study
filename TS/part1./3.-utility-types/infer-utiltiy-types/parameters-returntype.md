@@ -63,3 +63,9 @@ infer 를 이용해 return 에 return 값을 뱉어놓는다.
 
 
 
+<mark style="background-color:green;">=> 이들을 이용해서 어떤 함수가 있을때,</mark>
+
+<mark style="background-color:green;">=> 자유자재로 각 함수의 매개변수 타입, 리턴 타입들을 뜯어올 수 있다.</mark>
+
+
+
