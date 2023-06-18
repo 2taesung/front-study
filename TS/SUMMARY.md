@@ -46,6 +46,8 @@
     * [Promise.all](part1./undefined/promise.all.md)
     * [bind](part1./undefined/bind.md)
     * [flat](part1./undefined/flat.md)
+* [타입스크립트 올인원 : Part2. 실전 분석편](part2./README.md)
+  * [섹션 0](part2./0.md)
 * [원챌 2월, TypeScript](2-typescript/README.md)
   * [week 1-1 Document for TypeScript](2-typescript/week-1-1-document-for-typescript/README.md)
     * [1. Document for TypeScript](2-typescript/week-1-1-document-for-typescript/1.-document-for-typescript.md)
