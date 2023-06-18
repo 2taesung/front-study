@@ -42,7 +42,9 @@ Depth가 있으면 재귀로 Depth를 하나씩 낮춰줘야함..
 
 infer InnerArr 안에 있는 arr의 타입을 추론하라고 시킨것.
 
+{% embed url="https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types" %}
 
+conditional type 에 있는  infer 문법이다.
 
 
 
