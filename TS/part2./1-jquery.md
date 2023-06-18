@@ -58,5 +58,15 @@ import React fromt 'react';
 
 
 
-tsconfig에서 esModuleInterop: true 세팅으로 인해 as 귀찮으니까 없애준것.
+tsconfig에서 <mark style="background-color:green;">esModuleInterop: true</mark> 세팅으로 인해 as 귀찮으니까 없애준것.
+
+
+
+앞으로 확인했을 때&#x20;
+
+export = $; 로 될 경우 commonjs
+
+export default $; 면 esmodule (최신)
+
+
 
