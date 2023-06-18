@@ -6,9 +6,9 @@ type Record<K extends keyof any, T> = {
 };
 ```
 
-key 값에는 string | numaber | symbol 만 가능.
+<mark style="background-color:green;">\[암기]key 값에는 string | numaber | symbol 만 가능.</mark>
 
-이게 뜻하는게 extends keyof any
+<mark style="background-color:green;">이게 뜻하는게 extends keyof any</mark>&#x20;
 
 
 
