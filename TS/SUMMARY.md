@@ -50,6 +50,7 @@
   * [섹션 0](part2./0.md)
   * [섹션 1 - jQuery](part2./1-jquery/README.md)
     * [네임스페이스(namespace)](part2./1-jquery/namespace.md)
+    * [메소드와 this 타이핑](part2./1-jquery/this.md)
 * [원챌 2월, TypeScript](2-typescript/README.md)
   * [week 1-1 Document for TypeScript](2-typescript/week-1-1-document-for-typescript/README.md)
     * [1. Document for TypeScript](2-typescript/week-1-1-document-for-typescript/1.-document-for-typescript.md)
