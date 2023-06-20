@@ -1,15 +1,9 @@
-# 훈련의 장
-
-ts 관련해 띵언이 나왔는데
-
-내가 상상속으로 type을 추가할 필요 없다.
-
-필요할 때 추가하면 돼!
+# 정답
 
 ```typescript
-interface zQuery<> {
-  text(): void;
-  html(): void;
+interface zQuery<T> {
+  text(param?: string | number | ((this: T, index: number) => void)): this;
+  html(param: Document): void;
 }
 
 const $tag: zQuery<HTMLElement> = $(["p", "t"]) as zQuery<HTMLElement>;
@@ -25,6 +19,3 @@ $tag.text(function (index) {
 $tag.text().html(document);
 
 ```
-
-
-
