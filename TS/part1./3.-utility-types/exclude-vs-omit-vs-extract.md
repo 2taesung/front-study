@@ -77,7 +77,7 @@ Exclude는 유니온을 대상으로 하는 것이고
 
 Omit은 객체를 대상으로 하는 것.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

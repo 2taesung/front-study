@@ -56,6 +56,7 @@
   * [섹션 2 - Axios](part2./2-axios/README.md)
     * [axios.get](part2./2-axios/axios.get.md)
     * [제네릭을 이용한 response](part2./2-axios/response.md)
+    * [AxiosError와 unknown error 대처법](part2./2-axios/axioserror-unknown-error.md)
 * [원챌 2월, TypeScript](2-typescript/README.md)
   * [week 1-1 Document for TypeScript](2-typescript/week-1-1-document-for-typescript/README.md)
     * [1. Document for TypeScript](2-typescript/week-1-1-document-for-typescript/1.-document-for-typescript.md)

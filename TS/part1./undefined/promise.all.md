@@ -70,7 +70,7 @@ keyof T = '0' | '1' | '2' | 'length'
 
 일단 T\[P]를 보면 최종적으로 T 는 배열 P는 index로 값을 return&#x20;
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. 그래서 위의 사진의 Awaited 의 T는 T\[P] 인 각각의 promise인 value 들이다. (p1, p2, p3 ...)
 
