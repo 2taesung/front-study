@@ -54,7 +54,7 @@
     * [훈련의 장](part2./1-jquery/undefined.md)
     * [정답](part2./1-jquery/undefined-1.md)
   * [섹션 2 - Axios](part2./2-axios/README.md)
-    * [ts-node 사용하기](part2./2-axios/ts-node.md)
+    * [axios.get](part2./2-axios/axios.get.md)
 * [원챌 2월, TypeScript](2-typescript/README.md)
   * [week 1-1 Document for TypeScript](2-typescript/week-1-1-document-for-typescript/README.md)
     * [1. Document for TypeScript](2-typescript/week-1-1-document-for-typescript/1.-document-for-typescript.md)
