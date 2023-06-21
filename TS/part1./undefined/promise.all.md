@@ -20,7 +20,7 @@ Promise.all([p1, p2, p3]).then((result) => {
 all<T extends readonly unknown[] | []>(values: T): Promise<{ -readonly [P in keyof T]: Awaited<T[P]> }>;
 ```
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
 \=> Promise.all의 result를 보면 위의 p1처럼 여러 then, toString 등 타입을 바꿔주는 영향들이 다수 존재하는데 이 모든걸 해결하고 정답을 뿜어낸다.
 

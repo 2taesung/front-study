@@ -14,7 +14,7 @@ axios error 처리가 상당히 어려운데
 
 둘이 다르긴 하지만 위에서 언급되는 내용에는 크게 벗어나진 않는 듯 하다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 그래서 'ts는 건망증이 심하다' 편에서 제안했던 대로 as 를 통해서 너는 AxiosError야 라고 알려주기로 좀 아쉽지만 해결할 수 있음.
 
@@ -30,7 +30,7 @@ axios error 처리가 상당히 어려운데
 
 근데 여기서 이렇게 하면 재사용이 안됨.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 이런식으로 아래는 그대로 any.
 
@@ -57,8 +57,7 @@ axios error 처리가 상당히 어려운데
 ```typescript
   } catch (error) {
     if (error instanceof AxiosError) { // 커스텀 타입 가드
-      const errorResponse = (error as AxiosError).response;
-      console.error(errorResponse?.data)
+      console.error(error.response?.data)
     }
   }
 ```
@@ -72,21 +71,36 @@ axios error 처리가 상당히 어려운데
 ```typescript
   } catch (error) {
     if (axios.isAxiosError(error)) { // 커스텀 타입 가드
-      const errorResponse = (error as AxiosError).response;
-      console.error(errorResponse?.data)
+      console.error(error.response?.data)
     }
   }
 ```
 
 \=> 이걸로도 충분히 괜찮다.
 
-\=> 하지만 data를 찍어보면 any가 뜨는데 이걸 해결하고 싶다... ?
+\=> 하지만 data를 찍어보면 unknown이 뜨는데 이걸 해결하고 싶다... ?
+
+
+
+![](<../../.gitbook/assets/image (13).png>)
 
 \=> 그런데 뒤져보니까 별도 제네릭은 구비되어 있지 않음.
 
+```typescript
+  } catch (error) {
+    if (axios.isAxiosError(error)) { // 커스텀 타입 가드
+      // {message: '서버 장애입니다. 다시 시도해주세요'}
+      console.error((error.response as AxiosResponse<{message: string}>)?.data.message )
+    }
+  }
+})();
+```
+
+최종적으로 message 에 string이 도출 구비.
 
 
 
+일단 최대한 as 를 없애는 방법을 고민해보자.....
 
 
 
