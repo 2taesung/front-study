@@ -30,7 +30,7 @@ axios error 처리가 상당히 어려운데
 
 근데 여기서 이렇게 하면 재사용이 안됨.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 이런식으로 아래는 그대로 any.
 
@@ -97,6 +97,20 @@ axios error 처리가 상당히 어려운데
 ```
 
 최종적으로 message 에 string이 도출 구비.
+
+```typescript
+  } catch (error) {
+    if (axios.isAxiosError(error)) { // 커스텀 타입 가드
+      // {message: '서버 장애입니다. 다시 시도해주세요'}
+      console.error((error as AxiosError<{message: string}>).response?.data.message )
+    }
+  }
+})();
+```
+
+아 다르고 어 다른거일 뿐이긴 한데&#x20;
+
+개인적으로는 AxiosError 를 쓰는게 error 안에서는 맞지 않을까 ...
 
 
 
