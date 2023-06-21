@@ -20,6 +20,20 @@ get<T = any, R = AxiosResponse<T>, D = any>(url: string, config?: AxiosRequestCo
 
 자 여기서 보면 T, R, D 가 문제임.
 
+
+
+```typescript
+await axios.get("https://jsonplaceholder.typicode.com/posts/1");
+```
+
+그런데 우리가 보통 쓰는걸 보면 제네릭을 안쓰는 경우가 허다함.
+
+
+
+그래서 T, R, D 는 default 값이 들어가 있는 걸 알 수 있음.
+
+
+
 우선 T
 
 뭔지 모르겠음.
@@ -49,6 +63,12 @@ generic으로 D가 하나 더 들어가네 ?
 \=> 이전 단계에는 D 선언이 없었는데 여기에 있누 ...?
 
 \=> 얼래 config도 ? optional이 아니네?
+
+
+
+\=> 근데 T, D는 default 값이 있기 때문에 없을 수도 있는 셈.
+
+
 
 
 
