@@ -88,6 +88,51 @@ const middleware = (req: Request, res: Response, next: express.NextFunction) => 
 
 
 
+\=> 그런데 이렇게 일일히 인자에 넣을게 아니라 한번에 처리할 수 있는걸 지원한다.
+
+```typescript
+const middleware: RequestHandler = (req, res, next) => {
+
+}
+```
+
+\=> 다음처럼 RequestHandler 를 express에서 지원하기에 가져오면 됨.
+
+```typescript
+const middleware: RequestHandler = (req, res, next) => {
+  req.body.bodyType; //any
+  req.params.paramType; //not any
+  req.query.queryType; //not any
+  res.locals.localTyp; //any
+}
+```
+
+여기에 발생하는 any들도 없애주고 싶다.
+
+관련 제네릭을 뒤집어 까보는거지 뭐.
+
+```typescript
+const middleware: RequestHandler<
+    {paramType: string}, 
+    {message: string}, 
+    {bodyType: number}, 
+    {queryType: boolean}, 
+    {localType: unknown} 
+  > = (req, res, next) => {
+    req.body.bodyType;
+    req.params.paramType;
+    req.query.queryType;
+    res.locals.localType;
+    res.json({
+      message: 'hello'
+    })
+  } 
+```
+
+이런식으로 제네릭을 뒤져서 값을 채워주면 된다.
+
+
+
 RequestHandler
 
 ```typescript
@@ -112,6 +157,8 @@ export interface RequestHandler<
 추가 팁으로 extends http.ServerResponse, Express.Response&#x20;
 
 이렇게 두가지를 한번에 extends 할 수 도 있다.
+
+
 
 
 
