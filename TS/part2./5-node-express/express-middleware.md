@@ -4,7 +4,7 @@ express는 middleware가 전부다...!
 
 ### express().get()
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 위 사진을 보면 타입이 동일한 무언가가 반복돼서 나열되어 있다.
 
@@ -24,7 +24,7 @@ Method가 'get'
 
 여기서 이 친구에 해당하는 오버로딩을 위의 수많은 (사실 오바임 5개임) 오버로딩 중 어떻게 찾아내느냐?
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 찾아서 표시해준다!
 
@@ -56,11 +56,35 @@ Route extends string
 
 \=> 일반적인 인자라고 생각했을때 a, ...rest 가능
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 \=> cors(), multer() 애네들 일명 미들웨어들은  RequestHandler에 해당
 
-그 뒤에 있는 (req, res) 는 해당 위치에서 '문맥적 추론'에 따라 타입이 추론이 된다.
+
+
+\=>그 뒤에 있는 (req, res) 는 해당 위치에서 '문맥적 추론'에 따라 타입이 추론이 된다.
+
+그런데 따로 변수로 뺄 경우 이 문맥적 추론이 작동 안할 수 있다.
+
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+```typescript
+const middleware = (req: Request, res: Response, next) => {
+
+}
+```
+
+\=> global로 declare 하여 공유하고 있기 때문에 타입을 가져다가 쓸 수 있다.
+
+\=> next는 없어서&#x20;
+
+```typescript
+const middleware = (req: Request, res: Response, next: express.NextFunction) => {
+
+}
+```
+
+다음과 같이 가져와야함.
 
 
 
@@ -85,7 +109,9 @@ export interface RequestHandler<
 
 
 
+추가 팁으로 extends http.ServerResponse, Express.Response&#x20;
 
+이렇게 두가지를 한번에 extends 할 수 도 있다.
 
 
 
