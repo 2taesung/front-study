@@ -10,7 +10,7 @@ axios error 처리가 상당히 어려운데
 
 내가 실제로 실습했을때는 any
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 둘이 다르긴 하지만 위에서 언급되는 내용에는 크게 벗어나진 않는 듯 하다.
 
@@ -82,7 +82,7 @@ axios error 처리가 상당히 어려운데
 
 
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (13).png>)
 
 \=> 그런데 뒤져보니까 별도 제네릭은 구비되어 있지 않음.
 
