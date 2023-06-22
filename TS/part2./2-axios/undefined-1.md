@@ -3,7 +3,7 @@
 ```typescript
 import axios, { AxiosError, AxiosResponse } from "axios";
 
-type data = {
+type Data = {
   title: string,
   body: string
 }
@@ -18,8 +18,8 @@ interface A {
   get:<T=any, R=AxiosResponse<T>>(url: string) => Promise<R>,
   post:<T=any, R=AxiosResponse<T>, D=any>(url: string, data?: D) => Promise<R>,
   isAxiosError:<T>(error: unknown) => error is AxiosError,
-  (config:config<data>):void,
-  (url:string, config: config<data>): void,
+  (config:config<Data>):void,
+  (url:string, config: config<Data>): void,
 }
 
 interface Post {
@@ -30,7 +30,6 @@ interface Post {
 }
 
 interface Created {}
-interface Data { title: string, body: string}
 
 (async () => {
   const ax: A = axios;
