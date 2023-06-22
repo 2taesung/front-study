@@ -62,6 +62,7 @@
   * [섹션 5 - Node, Express](part2./5-node-express/README.md)
     * [@types/node](part2./5-node-express/types-node.md)
     * [express](part2./5-node-express/express.md)
+    * [express middleware](part2./5-node-express/express-middleware.md)
 * [원챌 2월, TypeScript](2-typescript/README.md)
   * [week 1-1 Document for TypeScript](2-typescript/week-1-1-document-for-typescript/README.md)
     * [1. Document for TypeScript](2-typescript/week-1-1-document-for-typescript/1.-document-for-typescript.md)
