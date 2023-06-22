@@ -80,6 +80,16 @@ declare global {
 
 ```
 
+```
+   (req: Request | http.IncomingMessage, res: Response | http.ServerResponse): any;
+```
+
+\=> 여기에 있는 http는 node:http 인 @types/node의 다른 모듈이다.
+
+\=> <mark style="background-color:green;">고로 express의 req, res는 http의 것을 확장한 것.</mark>
+
+
+
 느낀점&#x20;
 
 * Record 실제로 쓰이는거 처음보네 ...
