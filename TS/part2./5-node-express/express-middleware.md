@@ -52,11 +52,15 @@ Route extends string
 
 ... 이면 spread로 풀 수 있는 타입이라는거고 Array<> 타입으로 array 확인
 
-<mark style="background-color:orange;">=> ... 되어있는 것은 RequestHandler\<P, ResBody, ReqBody, ReqQuery, LocalsObj> 얘를 여러개 넣을 수 있다?</mark>
+<mark style="background-color:green;">=> ... 되어있는 것은 RequestHandler\<P, ResBody, ReqBody, ReqQuery, LocalsObj> 얘를 여러개 넣을 수 있다?</mark>
+
+\=> 일반적인 인자라고 생각했을때 a, ...rest 가능
 
 <figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 \=> cors(), multer() 애네들 일명 미들웨어들은  RequestHandler에 해당
+
+그 뒤에 있는 (req, res) 는 해당 위치에서 '문맥적 추론'에 따라 타입이 추론이 된다.
 
 
 
