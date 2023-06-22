@@ -4,7 +4,7 @@
 
 놉. 왜? 현재 any가 다수 발생하는 any-script 작성중
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ```typescript
 get<T = any, R = AxiosResponse<T>, D = any>(url: string, config?: AxiosRequestConfig<D>): Promise<R>;
@@ -16,7 +16,7 @@ get을 다시 가져와보면
 
 
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ```typescript
 export interface AxiosResponse<T = any, D = any> {
@@ -39,7 +39,7 @@ D 제네릭의 쓰임을 살펴보면 안쓰이고 있는게 사실이다....
 
 \=> 해결됨. 그대로 넣으면 됨. 약간 허무한 결말.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 \=> 유기적으로 틀린 부분이 확인 되면 여지없이 빨간 줄.
 

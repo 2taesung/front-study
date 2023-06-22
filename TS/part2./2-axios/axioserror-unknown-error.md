@@ -22,7 +22,7 @@ axios error 처리가 상당히 어려운데
 
 근데 여기에 unknown이 있을 수 있기 때문에 response에 data가 없을 수 있다.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 옵셔널 체이닝까지 깔끔하게
 
@@ -30,7 +30,7 @@ axios error 처리가 상당히 어려운데
 
 근데 여기서 이렇게 하면 재사용이 안됨.
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 이런식으로 아래는 그대로 any.
 
@@ -82,7 +82,7 @@ axios error 처리가 상당히 어려운데
 
 
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (14).png>)
 
 \=> 그런데 뒤져보니까 별도 제네릭은 구비되어 있지 않음.
 
