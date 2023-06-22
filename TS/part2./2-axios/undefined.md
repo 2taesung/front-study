@@ -1,6 +1,47 @@
 # 훈련의 장
 
+```typescript
+import axios, { AxiosError, AxiosResponse } from "axios";
 
+interface A {
+}
+
+interface Post {
+}
+
+interface Created {}
+
+(async () => {
+  const ax: A = axios;
+  try {
+    const res1 = await ax.get<>("https://jsonplaceholder.typicode.com/posts/1");
+
+    const res2 = ax.post<>('https://jsonplaceholder.typicode.com/posts', { title: 'a', body: 'b'})
+
+    const res3 = ax({
+      method: 'post',
+      url : 'https://jsonplaceholder.typicode.com/posts',
+      data : {
+        title: 'a', 
+        body:'b'
+      }
+    })
+    const res4 = ax('https://jsonplaceholder.typicode.com/posts',{
+      method: 'post',
+      data : {
+        title: 'a', body: 'b'
+      }
+    })
+  } catch (error) {
+    if (ax.isAxiosError(error)) { // 커스텀 타입 가드
+      // {message: '서버 장애입니다. 다시 시도해주세요'}
+      console.error((error as AxiosError<{message: string}>).response?.data.message )
+    }
+  }
+})();
+
+
+```
 
 
 
