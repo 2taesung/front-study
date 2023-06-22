@@ -22,6 +22,10 @@ declare function e(): core.Express;
 
 \=> 아마 다 이유가 있을 것 또는 히스토리라도 ...
 
+\=> 추측상) a -> b 참조, b -> a 참조하면 순환 참조가 발생.
+
+\=> 이것을 해결하기 위해 참조되는 부분을 따로 빼 처리하는 방식이 있음.
+
 ```typescript
 export interface Express extends Application {
     request: Request;

@@ -30,7 +30,7 @@ axios error 처리가 상당히 어려운데
 
 근데 여기서 이렇게 하면 재사용이 안됨.
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 이런식으로 아래는 그대로 any.
 

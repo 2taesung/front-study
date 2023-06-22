@@ -16,7 +16,7 @@ get을 다시 가져와보면
 
 
 
-<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ```typescript
 export interface AxiosResponse<T = any, D = any> {
