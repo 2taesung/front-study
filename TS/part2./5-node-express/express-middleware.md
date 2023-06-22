@@ -24,7 +24,7 @@ Method가 'get'
 
 여기서 이 친구에 해당하는 오버로딩을 위의 수많은 (사실 오바임 5개임) 오버로딩 중 어떻게 찾아내느냐?
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 이렇게 찾아서 표시해준다!
 
@@ -51,6 +51,12 @@ Route extends string
 ```
 
 ... 이면 spread로 풀 수 있는 타입이라는거고 Array<> 타입으로 array 확인
+
+<mark style="background-color:orange;">=> ... 되어있는 것은 RequestHandler\<P, ResBody, ReqBody, ReqQuery, LocalsObj> 얘를 여러개 넣을 수 있다?</mark>
+
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+
+\=> cors(), multer() 애네들 일명 미들웨어들은  RequestHandler에 해당
 
 
 
