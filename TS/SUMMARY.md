@@ -71,3 +71,5 @@
   * [Week 2-1 Safety Application for TypeScript](2-typescript/week-2-1-safety-application-for-typescript/README.md)
     * [1. TS 건전성](2-typescript/week-2-1-safety-application-for-typescript/1.-ts.md)
   * [Week 2-2 TypeScript's Type System](2-typescript/week-2-2-typescripts-type-system.md)
+* [타입스크립트 심화](undefined/README.md)
+  * [Decorators](undefined/decorators.md)
