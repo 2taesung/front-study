@@ -26,7 +26,7 @@
 
 \=> 한마디로 일반 변수는 데이터가 바뀌더라도 바로 UI에 적용되지 않는다.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. rendering시 데이터가 보존되지 않는다. 렌더링이 되면 당연히 변수도 초기 할당값으로 재할당된다.
 
