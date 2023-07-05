@@ -29,5 +29,8 @@
     * [useMemo](react-1/undefined/usememo.md)
     * [useCallback](react-1/undefined/usecallback.md)
     * [rendering 최적화(React.memo)](react-1/undefined/rendering-react.memo.md)
+* [React.dev](react.dev/README.md)
+  * [Sharing State Between Components](react.dev/sharing-state-between-components/README.md)
+    * [A single source of truth for each state](react.dev/sharing-state-between-components/a-single-source-of-truth-for-each-state.md)
 * [라이브러리](undefined/README.md)
   * [Axios](undefined/axios.md)
