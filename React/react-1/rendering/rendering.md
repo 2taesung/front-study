@@ -65,7 +65,7 @@ Critical Rendering Path는 기본적으로 아래의 과정을 수행합니다.
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
