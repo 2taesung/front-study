@@ -33,6 +33,7 @@
   * [Sharing State Between Components](react.dev/sharing-state-between-components/README.md)
     * [A single source of truth for each state](react.dev/sharing-state-between-components/a-single-source-of-truth-for-each-state.md)
 * [후이의 제어 컴포넌트 vs 비제어 컴포넌트](vs/README.md)
+  * [제어 컴포넌트, 비제어 컴포넌트](vs/undefined.md)
   * [Single Source of Truth](vs/single-source-of-truth.md)
 * [라이브러리](undefined/README.md)
   * [Axios](undefined/axios.md)
