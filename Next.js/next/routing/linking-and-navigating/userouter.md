@@ -16,6 +16,12 @@ push, refresh 등등...
 
 push는 그냥 말그대로 push 해서 쌓인다.
 
+근데 사실 여기서 replace를 어디다 쓰냐? 할 수 있다.&#x20;
+
+그런데 내가 실제로 routing 역할만 하고 있는 Home, 로그인 역할만 하고 있는 login 페이지 같은 경우는 오히려 히스토리에 흔적을 남기는게 비효율을 유발한다.(login 페이지는 accesstoken이 fail이거나 logout일 경우에만 가야 좋기에)&#x20;
+
+그래서 replace를 적절히 사용할 수 있었다.
+
 
 
 팁.
