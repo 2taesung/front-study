@@ -8,6 +8,16 @@ push, refresh 등등...
 
 
 
+### router.replace vs reuter.push
+
+둘다history stack 해당 url을 stack 한다.&#x20;
+
+그런데 replace는 현재 것을 대체하고 (이동한 후 전에거가 사라지고 그 전거만이 남아있다)
+
+push는 그냥 말그대로 push 해서 쌓인다.
+
+
+
 팁.
 
 Link 컴포넌트와 다르게 연결된 페이지를 미리 불러오지 못함.
