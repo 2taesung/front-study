@@ -19,6 +19,8 @@
       * [useRouter](next/routing/linking-and-navigating/userouter.md)
       * [Shallow Routing](next/routing/linking-and-navigating/shallow-routing.md)
   * [Rendering](next/rendering.md)
+  * [Data Fetching](next-pages/data-fetching/README.md)
+    * [getStaticPaths](next-pages/data-fetching/getstaticpaths.md)
   * [Optimizations(최적화)](next/optimizations/README.md)
     * [image](next/next-image.md)
     * [script](next/next-script.md)
