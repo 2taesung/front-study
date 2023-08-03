@@ -9,6 +9,10 @@ description: >-
 
 이것을 통해 paths를 제공함으로 Dynamic Routes에서도 pre-rendering을 사용할 수 있다.
 
+\=> 쉽게 말해 getStaticProps로 \[slug]는 만들어놓지 못하니 getStaticPaths가 \[slug]를 동적으로 받아 이에 맞는 것들을 미리 다 만들어주는 것.
+
+
+
 \*참고
 
 해당 함수도 static으로 build시에만 실행된다.
