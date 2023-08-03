@@ -21,6 +21,7 @@
   * [Rendering](next/rendering.md)
   * [Data Fetching](next-pages/data-fetching/README.md)
     * [getStaticPaths](next-pages/data-fetching/getstaticpaths.md)
+    * [Incremental Static Regeneration](next-pages/data-fetching/incremental-static-regeneration.md)
   * [Optimizations(최적화)](next/optimizations/README.md)
     * [image](next/next-image.md)
     * [script](next/next-script.md)
