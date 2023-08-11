@@ -1,3 +1,7 @@
+---
+description: https://www.typescriptlang.org/ko/docs/handbook/decorators.html
+---
+
 # Decorators
 
 Decorator는 갑론을박이 있음.(내가 봐도 그렇다)

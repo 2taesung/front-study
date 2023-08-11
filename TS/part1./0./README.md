@@ -18,7 +18,7 @@
 
 
 
-### tsc 설치 - [MT tsc 설치와 비교해보기](http://localhost:5000/s/XcE6iWlyTypdRBbfFkCR/week-1/undefined#typescript-+-react-+-jest-+-parcel)
+### tsc 설치 - [MT tsc 설치와 비교해보기](http://127.0.0.1:5000/s/XcE6iWlyTypdRBbfFkCR/week-1/undefined#typescript-+-react-+-jest-+-parcel)
 
 > tsc --noEmit&#x20;
 
