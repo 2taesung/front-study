@@ -1,6 +1,6 @@
 # Shallow Routing
 
-data fetching 없이 URL 바꿔주는 api
+data fetching 없이 URL만 바꿔주는 api
 
 상태 손실 없음
 
