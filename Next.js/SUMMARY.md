@@ -19,6 +19,7 @@
       * [next/link](next/next-link.md)
       * [useRouter](next/routing/linking-and-navigating/userouter.md)
       * [Shallow Routing](next/routing/linking-and-navigating/shallow-routing.md)
+    * [API Routes](next-pages/routing/api-routes.md)
   * [Rendering](next/rendering.md)
   * [Data Fetching](next-pages/data-fetching/README.md)
     * [getStaticProps](next-pages/data-fetching/getstaticprops.md)
