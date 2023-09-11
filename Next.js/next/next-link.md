@@ -23,6 +23,8 @@ a는 html tag이기에 브라우저에서 실제로 이동하는 것을 액션�
 
 하지만 Link의 경우 기존에 것에서 필요한 것들만 선택적으로 가져옴
 
+원리는 url로 접근하는 것과 달리 JS 상에서 변경하기 때문.
+
 이것을 <mark style="background-color:green;">Client Side Navigate</mark>라고 함.
 
 실제 network를 비교해보면 Link는 한두개 a는 엄청 많이 발생.
