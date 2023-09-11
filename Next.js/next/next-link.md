@@ -33,7 +33,7 @@ a는 html tag이기에 브라우저에서 실제로 이동하는 것을 액션�
 
 
 
-### code spliting
+### <mark style="background-color:green;">code spliting이와 prefetch를 연결해 설명</mark>
 
 원래next에서 auto spliting 최적화를 하는게 있는데&#x20;
 
@@ -42,4 +42,11 @@ a는 html tag이기에 브라우저에서 실제로 이동하는 것을 액션�
 
 
 Viewport에 Link 컴포넌트가 노출되었을 때 href로 연결된 페이지의 chunk를 로드.
+
+
+
+### 주의점
+
+* 본 서비스 외부 링크로 연결 할 때는 \<a> tag만 쓰면 됨.
+* Link Component에 스타일을 줄 대는 \<a> tag에 줘야 함.
 
