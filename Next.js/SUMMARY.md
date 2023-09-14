@@ -22,7 +22,7 @@
     * [API Routes](next-pages/routing/api-routes.md)
   * [Rendering](next/rendering.md)
   * [Data Fetching](next-pages/data-fetching/README.md)
-    * [getStaticProps](next-pages/data-fetching/getstaticprops.md)
+    * [getStaticProps(SSG)](next-pages/data-fetching/getstaticprops-ssg.md)
     * [getStaticPaths](next-pages/data-fetching/getstaticpaths.md)
     * [Incremental Static Regeneration](next-pages/data-fetching/incremental-static-regeneration.md)
   * [Optimizations(최적화)](next/optimizations/README.md)
