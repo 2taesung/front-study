@@ -1,5 +1,17 @@
 # Pages and Layouts
 
+23/9/18 debuging
+
+패캠blog 실습하다가&#x20;
+
+pages의  post와 posts 두개의 폴더로 분리된 로직을 그냥 하나에 만들어서 작업했어.
+
+그랬더니 create하고 post 안에 있는 \[id].js 에서 새로 생긴 페이지를 인식하는데 오래걸림.
+
+그래서 404가 뜨고 시간이 지나서 해결이 됨.
+
+
+
 file-system based router [concept of pages](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts).
 
 When a file is added to the `pages` directory, it's automatically available as a route.
