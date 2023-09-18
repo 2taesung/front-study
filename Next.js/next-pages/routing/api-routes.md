@@ -14,6 +14,14 @@ pages폴더 안에서 /api/\* 면 자동으로 page대신 api 엔드포인트로
 
 
 
+API Routes can't be used with [static exports](https://nextjs.org/docs/pages/building-your-application/deploying/static-exports). However, [Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers) in the App Router can.
+
+\=> ssg, static 렌더 메소드들은 API Routes 못씀.
+
+\=> 하지만 App router 에서는 다름.
+
+
+
 API Routes 는CORS 헤더를 지정하지 않으므로  default로 **same-origin only**&#x20;
 
 요청 핸들러를 CORS 요청 헬퍼로 래핑하여 이러한 동작을 사용자 정의할 수 있습니다.
