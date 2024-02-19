@@ -26,13 +26,14 @@ npm install msw --save-dev
 ```bash
 mkdir ./fixtures
 touch ./fixtures/index.ts
+touch ./fixtures/products.ts
 ```
 
 ```typescript
-import products from './products';
+import { searchResult } from './search';
 
 export default {
-  products,
+  searchResult,
 };
 ```
 
@@ -43,30 +44,31 @@ export default {
 ./fixtures/products.ts
 
 ```typescript
-import { ProductType } from '../src/types';
-
-const products: ProductType[] = [
-  {
-    id: 1,
-    name: 'Warmwhite Cup',
-    thumbnail:
-      'https://contents.sixshop.com/thumbnails/uploadedFiles/183003/product/image_1634831270597_1000.jpg',
-    price: 25000,
-    category: '악세사리',
-    quantity: 10,
-  },
-  {
-    id: 2,
-    name: 'Coin Walnut Table',
-    thumbnail:
-      'https://contents.sixshop.com/thumbnails/uploadedFiles/183003/product/image_1634415880172_1000.png',
-    price: 120000,
-    category: '악세사리',
-    quantity: 10,
-  },
-];
-
-export default products;
+export const searchResult = {
+  total_result_count: 1,
+  total_page_count: 1,
+  current_page: 1,
+  results: [
+    {
+      convert_group_title: '다나앤페타 FW',
+      manager: '윤여진',
+      convert_id: 2938472983,
+      saved_at: '2021-08-17 11:00:00',
+      count: 1,
+      success_count: 1,
+      fail_count: 0,
+      convert_images: [
+        {
+          id: 1,
+          image_title: '다나앤페타 FW_1',
+          image_url:
+            'https://s3.ap-northeast-2.amazonaws.com/queenit/convert/2938472983/다나앤페타_FW_1.jpg',
+          fail_reason: null,
+        },
+      ],
+    },
+  ],
+};
 ```
 
 
@@ -75,22 +77,18 @@ export default products;
 
 ```bash
 mkdir ./src/mocks
+mkdir ./src/mocks/handlers.ts
 ```
 
 ./src/mocks/handlers.ts
 
 ```typescript
-import { rest } from 'msw';
-import { ProductType } from '../types';
-import fixtures from '../../fixtures';
+import { http, HttpResponse } from 'msw';
+import { searchResult } from '@/../fixtures/search';
 
 export const handlers = [
-  rest.get('/products/:id', (req, res, ctx) => {
-    const { id } = req.params;
-    const filtered = fixtures.products.filter(
-      (product: ProductType) => product.id === Number(id),
-    );
-    return res(ctx.status(200), ctx.json({ data: { product: filtered[0] } }));
+  http.get('/search', () => {
+    return HttpResponse.json(searchResult);
   }),
 ];
 ```
